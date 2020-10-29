@@ -85,7 +85,7 @@ a:hover{
 
 .skill-row{
   width: 50%;
-  margin: 100px auto 100px auto;
+  margin: 100px auto 150px auto;
   text-align: left;
 }
 
@@ -95,21 +95,10 @@ a:hover{
   margin-right: 30px;
 }
 
-.flaticon-attribute-freepik{
-  font-size: 10px;
-  clear: both;
-}
-
 .coding-img{
   width: 25%;
   float: right;
   margin-left: 30px;
-}
-
-.flaticon-attribute-prettycons{
-  font-size: 10px;
-  text-align: right;
-  clear: both;
 }
 
 .contact-me{
@@ -164,7 +153,7 @@ a:hover{
   background-color: #ffe0ac;
   position: relative;
   padding-top: 50px;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 }
 
 .footer-link{
@@ -179,4 +168,23 @@ a:hover{
   font-size: 0.75rem;
   color: #66BFBF;
   padding: 20px 0;
+}
+
+.flaticon{
+  background-color: #ffe0ac;
+  position: relative;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.flaticon-attribute-prettycons{
+  font-size: 10px;
+  text-align: left;
+  clear: both;
+}
+
+.flaticon-attribute-freepik{
+  font-size: 10px;
+  text-align: left;
+  clear: both;
 }
