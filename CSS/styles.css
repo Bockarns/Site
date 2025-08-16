@@ -19,13 +19,21 @@ h2 {
   font-family: 'Montserrat', sans-serif;
   font-size: 2.5rem;
   font-weight: normal;
-  padding-bottom: 10px;
+  padding-bottom: 5px;
 }
 
 h3 {
   color: #cf7500;
   font-family: 'Montserrat', sans-serif;
   font-size: 2rem;
+}
+
+h4{
+  color: #cf7500;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  font-weight: normal;
+  padding-bottom: 5px;
 }
 
 hr{
@@ -78,7 +86,7 @@ a:hover{
 }
 
 .profile{
-  width: 40%;
+  width: 45%;
   margin: auto;
 }
 
@@ -90,15 +98,21 @@ a:hover{
 }
 
 .lock-img{
-  width: 25%;
+  width: 20%;
   float: left;
   margin-right: 30px;
 }
 
 .coding-img{
-  width: 25%;
+  width: 20%;
   float: right;
   margin-left: 30px;
+}
+
+.it-tech-img{
+  width: 20%;
+  float: left;
+  margin-right: 30px;
 }
 
 .contact-me{
@@ -180,9 +194,18 @@ a:hover{
 .flaticon-attribute-prettycons{
   font-size: 10px;
   text-align: left;
+  margin-left: 2%;
 }
 
 .flaticon-attribute-freepik{
   font-size: 10px;
   text-align: left;
+  margin-left: 2%;
+}
+
+.bockarns{
+  width: 2%;
+  float: right;
+  margin-right: 2%;
+
 }
