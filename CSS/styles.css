@@ -44,13 +44,14 @@ hr{
 
 }
 p{
+  color: #b9fffc ;
   font-size: 1.5rem;
   line-height: 2;
 }
 
 a{
   text-decoration: none;
-  color: black;
+  color: #cf7500;
 }
 
 a:hover{
@@ -58,7 +59,8 @@ a:hover{
 }
 
 .top-container {
-  background-color: #b9fffc;
+  background-image: linear-gradient(cyan, orange);
+  /* background-color: #b9fffc; */
   position: relative;
   padding-top: 100px;
 }
@@ -80,7 +82,7 @@ a:hover{
 }
 
 .middle-container {
-  background-color: #01c5c4;
+  background-color: #1a7474;
   position: relative;
   padding: 150px 0;
 }
@@ -204,7 +206,7 @@ a:hover{
 }
 
 .bockarns{
-  width: 2%;
+  width: 75px;
   float: right;
   margin-right: 2%;
 
