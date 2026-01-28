@@ -1,0 +1,232 @@
+.header {
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  height: 100px;
+  /* background: rgba(133, 252, 252, 0.7); */
+  background-image: linear-gradient(
+    rgba(154, 231, 231, 0.7),
+    rgba(97, 228, 206, 0.7)
+  );
+  padding-top: 25px;
+}
+
+.main-nav > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  /* background: rgb(176, 219, 156, 0.6); */
+  /* background: transparent; */
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.main-nav li {
+  position: relative; /* important for sub-nav positioning */
+}
+
+.main-nav a {
+  display: block;
+  padding: 10px 15px;
+  /* color: white; */
+  color: #cf7500;
+  text-decoration: none;
+}
+
+.main-nav a:hover {
+  background: rgba(247, 187, 109, 0.7);
+  transform: scale(1.05);
+  border-radius: 5px;
+}
+.current {
+  background: rgba(136, 243, 136, 0.5);
+  border-radius: 5px;
+}
+
+.menu > li:first-child {
+  color: rgb(0, 0, 0);
+  margin-right: auto;
+}
+
+.menu > li:last-child {
+  margin-left: auto;
+}
+
+.menu > li:last-child {
+  margin-left: auto;
+  padding-right: 15px;
+}
+
+.main-nav ul li a[href="login.html"] {
+  border: 1px solid black;
+}
+
+/* Sub-nav hidden by default */
+.sub-nav {
+  display: none;
+  position: absolute;
+  top: 100%; /* below parent */
+  left: 0;
+  background: rgba(176, 219, 156, 0.9);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  min-width: 150px;
+  border: 1px solid #47814c;
+  z-index: 1000;
+}
+
+/* Sub-nav items */
+.sub-nav li a {
+  padding: 10px;
+  color: #000000;
+}
+
+/* Show sub-nav on hover */
+.has-subnav:hover .sub-nav {
+  display: block;
+}
+
+.sub-nav li a:hover {
+  background: #79c776;
+  border-radius: 5px;
+}
+
+.nav-logo {
+  position: absolute;
+  width: 200px;
+  margin: -3px 0 0 0;
+  padding-left: 15px;
+}
+
+.logo-holder {
+  width: 175px;
+}
+
+/* Hamburger-Meny */
+
+#menu-toggle {
+  display: none;
+}
+
+#menu-toggle:checked + .hamburger-menu + .menu {
+  display: flex;
+}
+
+input[name="menu-toggle"]:checked ~ label .top {
+  background-color: #ffe797;
+  transform: rotate(45deg);
+}
+
+input[name="menu-toggle"]:checked ~ label .middle {
+  opacity: 0;
+}
+
+input[name="menu-toggle"]:checked ~ label .bottom {
+  background-color: #ffe797;
+  transform: rotate(-45deg);
+}
+
+/* Screen sizes */
+@media screen and (max-width: 1200px) {
+  .main-nav a {
+    padding: 10px 5px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  /* .header{
+    position: relative;
+  } */
+
+  /* .nav-container {
+    margin: 0;
+  } */
+
+  .main-nav {
+    display: flex;
+    flex-flow: column;
+    align-items: flex-end;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: column;
+    right: 0;
+    top: 60px;
+    left: 0;
+    gap: 0.5rem;
+    width: 100%;
+    border-top: none;
+    border-bottom: none;
+    position: relative;
+    background: rgba(97, 228, 206, 0.7);
+    /* background-image: linear-gradient(
+      rgba(154, 231, 231, 0.7),
+      rgba(97, 228, 206, 0.7)
+    ); */
+  }
+
+  .sub-nav {
+    display: none;
+    position: absolute;
+    top: -50%; /* below parent 100%*/
+    left: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    min-width: 150px;
+    border: 1px solid #47814c;
+    z-index: 1000;
+  }
+
+  input[name="menu-toggle"] ~ .menu {
+    height: 0;
+    overflow: hidden;
+    transition: all 1s ease;
+  }
+
+  input[name="menu-toggle"]:checked ~ .menu {
+    height: 21em;
+    overflow: hidden;
+  }
+
+  .hamburger-menu {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+    width: 2.5rem;
+    height: 2.5rem;
+    cursor: pointer;
+    margin-right: 15px;
+  }
+
+  .hamburger-menu .bar {
+    height: 5px;
+    background-color: #000000;
+    margin: 3px 0;
+    border-radius: 5px;
+    transition: all 0.5s;
+    transform-origin: left;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .menu {
+    align-items: center;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .main-nav > ul {
+    align-items: flex-start;
+  }
+  .nav-logo {
+    position: absolute;
+    width: 150px;
+    margin: 0 0 0 0;
+  }
+}

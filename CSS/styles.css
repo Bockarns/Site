@@ -1,22 +1,21 @@
 body {
-  color: #40514E;
+  color: #40514e;
   margin: 0;
   text-align: center;
-  font-family: 'Merriweather', serif;
-
+  font-family: "Merriweather", serif;
 }
 
 h1 {
-  color: #66BFBF;
+  color: rgb(102, 191, 191);
   line-height: 2;
   margin: 50px auto 0 auto;
-  font-family: 'Sacramento', cursive;
+  font-family: "Sacramento", cursive;
   font-size: 5.625rem;
 }
 
 h2 {
   color: #cf7500;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 2.5rem;
   font-weight: normal;
   padding-bottom: 5px;
@@ -24,61 +23,49 @@ h2 {
 
 h3 {
   color: #cf7500;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 2rem;
 }
 
-h4{
+h4 {
   color: #cf7500;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 1.5rem;
   font-weight: normal;
   padding-bottom: 5px;
 }
 
-hr{
+hr {
   border: dotted #b9fffc 6px;
   border-bottom: none;
   width: 4%;
   margin: 100px auto;
-
 }
-p{
-  color: #b9fffc ;
+p {
+  color: #b9fffc;
   font-size: 1.5rem;
   line-height: 2;
 }
 
-a{
+a {
   text-decoration: none;
   color: #cf7500;
 }
 
-a:hover{
+a:hover {
   color: #b9fffc;
 }
 
 .top-container {
-  background-image: linear-gradient(cyan, orange);
+  background-image: linear-gradient(rgb(0, 255, 255), orange);
   /* background-color: #b9fffc; */
   position: relative;
   padding-top: 100px;
+  overflow: hidden;
 }
 
 .pro {
   text-decoration: underline;
-}
-
-.top-cloud {
-  position: absolute;
-  right: 300px;
-  top: 50px;
-}
-
-.bottom-cloud {
-  position: absolute;
-  left: 300px;
-  bottom: 300px;
 }
 
 .middle-container {
@@ -87,82 +74,87 @@ a:hover{
   padding: 150px 0;
 }
 
-.profile{
+.profile {
   width: 45%;
   margin: auto;
 }
 
-
-.skill-row{
+.skill-row {
   width: 50%;
   margin: 100px auto 150px auto;
   text-align: left;
 }
-
-.lock-img{
-  width: 20%;
-  float: left;
-  margin-right: 30px;
+.left-h3 {
+  text-align: start;
+}
+.right-h3 {
+  text-align: end;
 }
 
-.coding-img{
+.lock-img {
   width: 20%;
   float: right;
   margin-left: 30px;
 }
 
-.it-tech-img{
+.coding-img {
   width: 20%;
   float: left;
   margin-right: 30px;
 }
 
-.contact-me{
+.it-tech-img {
+  width: 20%;
+  float: right;
+  margin-left: 30px;
+}
+
+.contact-me {
   padding-bottom: 50px;
 }
 
-.contact-message{
+.contact-message {
   width: 40%;
   margin: 40px auto 60px;
 }
 
 .btn {
-   background: #D19810;
-   background-image: -webkit-linear-gradient(top, #CF7500, #ffe0ac);
-   background-image: -moz-linear-gradient(top, #CF7500, #ffe0ac);
-   background-image: -ms-linear-gradient(top, #CF7500, #ffe0ac);
-   background-image: -o-linear-gradient(top, #CF7500, #ffe0ac);
-   background-image: -webkit-gradient(to bottom, #CF7500, #ffe0ac);
-   -webkit-border-radius: 8px;
-   -moz-border-radius: 8px;
-   border-radius: 8px;
-   color: #FFFFFF;
-   font-family: 'Montserrat', sans-serif;
-   font-size: 20px;
-   font-weight: 100;
-   padding: 10px;
-   -webkit-box-shadow: 1px 1px 20px 0 #000000;
-   -moz-box-shadow: 1px 1px 20px 0 #000000;
-   box-shadow: 1px 1px 20px 0 #000000;
-   text-shadow: 1px 1px 20px #000000;
-   text-decoration: none;
-   display: inline-block;
-   cursor: pointer;
-   text-align: center;
+  background: #d19810;
+  background-image: -webkit-linear-gradient(top, #cf7500, #ffe0ac);
+  background-image: -moz-linear-gradient(top, #cf7500, #ffe0ac);
+  background-image: -ms-linear-gradient(top, #cf7500, #ffe0ac);
+  background-image: -o-linear-gradient(top, #cf7500, #ffe0ac);
+  background-image: -webkit-gradient(to bottom, #cf7500, #ffe0ac);
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 100;
+  padding: 10px;
+  -webkit-box-shadow: 1px 1px 20px 0 #000000;
+  -moz-box-shadow: 1px 1px 20px 0 #000000;
+  box-shadow: 1px 1px 20px 0 #000000;
+  text-shadow: 1px 1px 20px #000000;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
 }
 
 .btn:hover {
-   border: solid #FFAE00 0;
-   background: #FFAE00;
-   background-image: -webkit-linear-gradient(top, #ffe0ac, #CF7500);
-   background-image: -moz-linear-gradient(top, #ffe0ac, #CF7500);
-   background-image: -ms-linear-gradient(top, #ffe0ac, #CF7500);
-   background-image: -o-linear-gradient(top, #ffe0ac, #CF7500);
-   background-image: -webkit-gradient(to bottom, #ffe0ac, #CF7500);
-   -webkit-border-radius: 8px;
-   -moz-border-radius: 8px;
-   border-radius: 8px;
-   text-decoration: none;
+  border: solid #ffae00 0;
+  background: #ffae00;
+  background-image: -webkit-linear-gradient(top, #ffe0ac, #cf7500);
+  background-image: -moz-linear-gradient(top, #ffe0ac, #cf7500);
+  background-image: -ms-linear-gradient(top, #ffe0ac, #cf7500);
+  background-image: -o-linear-gradient(top, #ffe0ac, #cf7500);
+  background-image: -webkit-gradient(to bottom, #ffe0ac, #cf7500);
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  text-decoration: none;
 }
 
 .bottom-container {
@@ -172,45 +164,89 @@ a:hover{
   padding-bottom: 10px;
 }
 
-.footer-link{
-  color: #66BFBF;
+.footer-link {
+  color: #66bfbf;
   margin: auto 20px auto 20px;
   font-size: 1.5rem;
-  font-family: 'Montserrat', sans-serif;
-
+  font-family: "Montserrat", sans-serif;
 }
 
-.copyright{
+.copyright {
   font-size: 0.75rem;
-  color: #66BFBF;
+  color: #66bfbf;
   padding: 20px 0;
 }
 
-.flaticon{
+.flaticon {
   background-color: #ffe0ac;
   position: relative;
   padding-top: 10px;
   padding-bottom: 20px;
 }
 
-.flaticon-attribute-prettycons{
+.flaticon-attribute-prettycons {
   font-size: 10px;
   text-align: left;
   margin-left: 2%;
-  color: #66BFBF;
+  color: #66bfbf;
 }
 
-.flaticon-attribute-freepik{
+.flaticon-attribute-freepik {
   font-size: 10px;
   text-align: left;
   margin-left: 2%;
-  color: #66BFBF;
+  color: #66bfbf;
 }
 
-.bockarns{
+.bockarns {
   width: 75px;
   float: right;
   margin-right: 2%;
-
+}
+.cloud {
+  position: absolute;
+  left: 0; /* 👈 ankare */
+  pointer-events: none;
+  opacity: 0.85;
+  will-change: transform;
 }
 
+/* Höger → vänster */
+.cloud-top {
+  top: 150px;
+  animation: cloudLeft 60s linear infinite;
+}
+
+/* Vänster → höger */
+.cloud-bottom {
+  top: 500px;
+  animation: cloudRight 95s linear infinite;
+}
+
+@keyframes cloudLeft {
+  from {
+    transform: translateX(110vw);
+  }
+  to {
+    transform: translateX(-110%);
+  }
+}
+
+@keyframes cloudRight {
+  from {
+    transform: translateX(-110%);
+  }
+  to {
+    transform: translateX(110vw);
+  }
+}
+/* Screensize */
+@media screen and (max-width: 992px) {
+  .profile {
+    width: 70%;
+  }
+  .skill-row {
+    width: 70%;
+    padding: 10%;
+  }
+}
