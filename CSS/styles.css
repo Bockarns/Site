@@ -57,17 +57,39 @@ a:hover {
 }
 
 .top-container {
+  display: flex;
+  flex-direction: column;
   background-image: linear-gradient(rgb(0, 255, 255), orange);
   /* background-color: #b9fffc; */
   position: relative;
-  padding-top: 100px;
+  padding-top: 200px;
   overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  height: 770px;
+}
+.welcome {
+  z-index: 5;
+}
+
+.welcome h1,
+h2,
+h4 {
+  color: #1a7474;
 }
 
 .mountain-img {
-  width: auto;
+  position: relative;
+  left: auto;
+  z-index: 10;
 }
 
+.sun-img {
+  z-index: 1;
+  position: absolute;
+  right: 40%;
+  animation: dayCycle 40s linear infinite;
+}
 .pro {
   text-decoration: underline;
 }
@@ -211,7 +233,7 @@ a:hover {
 /* Molneffekt */
 .cloud {
   position: absolute;
-  left: 0; /* 👈 ankare */
+  left: 0; /* ankare */
   pointer-events: none;
   opacity: 0.85;
   will-change: transform;
@@ -225,8 +247,10 @@ a:hover {
 
 /* Vänster → höger */
 .cloud-bottom {
-  top: 500px;
+  width: 10%;
+  top: 525px;
   animation: cloudRight 95s linear infinite;
+  z-index: 5;
 }
 
 @keyframes cloudLeft {
@@ -246,6 +270,27 @@ a:hover {
     transform: translateX(110vw);
   }
 }
+
+/* Soleffekt */
+@keyframes dayCycle {
+  0% {
+    bottom: -150px; /* Startar långt nere */
+    transform: scale(0.8) rotate(0deg);
+  }
+  40% {
+    bottom: 450px; /* Uppe på toppen */
+    transform: scale(1) rotate(140deg);
+  }
+  60% {
+    bottom: 450px; /* Stannar kvar uppe en stund */
+    transform: scale(1) rotate(220deg); /* Fortsätter rotera lite */
+  }
+  100% {
+    bottom: -150px; /* Går ner igen på andra sidan eller samma väg */
+    transform: scale(0.8) rotate(360deg); /* Fullbordar varvet */
+  }
+}
+
 /* Screensize */
 @media screen and (max-width: 992px) {
   .profile {
@@ -255,7 +300,7 @@ a:hover {
     width: 70%;
     padding: 10%;
   }
-  .mountain-img {
+  /* .mountain-img {
     width: 70%;
-  }
+  } */
 }
