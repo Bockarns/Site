@@ -247,7 +247,6 @@ h4 {
 
 /* Vänster → höger */
 .cloud-bottom {
-  width: 10%;
   top: 525px;
   animation: cloudRight 95s linear infinite;
   z-index: 5;
