@@ -76,8 +76,8 @@ a:hover {
 }
 
 .welcome h1,
-h2,
-h4 {
+.welcome h2,
+.welcome h4 {
   color: #1a7474;
 }
 
@@ -120,20 +120,22 @@ h4 {
   text-align: end;
 }
 
+/* Skillrow images */
+
 .lock-img {
-  width: 20%;
+  width: 25%;
   float: right;
   margin-left: 30px;
 }
 
 .coding-img {
-  width: 20%;
+  width: 25%;
   float: left;
   margin-right: 30px;
 }
 
 .it-tech-img {
-  width: 20%;
+  width: 25%;
   float: right;
   margin-left: 30px;
 }
@@ -299,10 +301,12 @@ h4 {
     width: 70%;
   }
   .skill-row {
-    width: 70%;
-    padding: 10%;
+    width: 90%;
+    margin: 50px auto 50px auto;
+    padding: 10px;
   }
-  /* .mountain-img {
-    width: 70%;
-  } */
+  .contact-message {
+    width: 80%;
+    margin: 40px auto 60px;
+  }
 }

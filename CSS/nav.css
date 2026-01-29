@@ -2,7 +2,7 @@
   position: fixed;
   z-index: 1000;
   width: 100%;
-  height: 100px;
+  height: 60px;
   /* background: rgba(133, 252, 252, 0.7); */
   background-image: linear-gradient(
     rgba(154, 231, 231, 0.7),
@@ -156,7 +156,7 @@ input[name="menu-toggle"]:checked ~ label .bottom {
     display: flex;
     flex-direction: column;
     right: 0;
-    top: 60px;
+    top: 20px;
     left: 0;
     gap: 0.5rem;
     width: 100%;
@@ -190,7 +190,7 @@ input[name="menu-toggle"]:checked ~ label .bottom {
   }
 
   input[name="menu-toggle"]:checked ~ .menu {
-    height: 21em;
+    height: 13.5em;
     overflow: hidden;
   }
 
