@@ -12,6 +12,10 @@ hr {
   border-width: 5px;
   width: 100%;
 }
+.cv-menu {
+  display: flex;
+  justify-content: space-evenly;
+}
 
 .icon {
   width: 13px;

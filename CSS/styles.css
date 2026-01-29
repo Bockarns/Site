@@ -38,12 +38,6 @@ h4 {
   padding-bottom: 5px;
 }
 
-hr {
-  border: dotted #b9fffc 6px;
-  border-bottom: none;
-  width: 4%;
-  margin: 100px auto;
-}
 p {
   color: #b9fffc;
   font-size: 1.5rem;
@@ -58,7 +52,12 @@ a {
 a:hover {
   color: #b9fffc;
 }
-
+.break-line {
+  border: dotted #b9fffc 6px;
+  border-bottom: none;
+  width: 4%;
+  margin: 100px auto;
+}
 .top-container {
   display: flex;
   flex-direction: column;
@@ -298,7 +297,7 @@ a:hover {
 /* Screensize */
 @media screen and (max-width: 992px) {
   .profile {
-    width: 70%;
+    width: 90%;
   }
   .skill-row {
     width: 90%;
