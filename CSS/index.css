@@ -1,0 +1,311 @@
+html {
+  scroll-behavior: smooth;
+}
+body {
+  color: #40514e;
+  margin: 0;
+  text-align: center;
+  font-family: "Merriweather", serif;
+}
+
+h1 {
+  color: rgb(102, 191, 191);
+  line-height: 2;
+  margin: 50px auto 0 auto;
+  font-family: "Sacramento", cursive;
+  font-size: 5.625rem;
+}
+
+h2 {
+  color: #cf7500;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.5rem;
+  font-weight: normal;
+  padding-bottom: 5px;
+}
+
+h3 {
+  color: #cf7500;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+}
+
+h4 {
+  color: #cf7500;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  font-weight: normal;
+  padding-bottom: 5px;
+}
+
+p {
+  color: #b9fffc;
+  font-size: 1.5rem;
+  line-height: 2;
+}
+
+a {
+  text-decoration: none;
+  color: #cf7500;
+}
+
+a:hover {
+  color: #b9fffc;
+}
+.break-line {
+  border: dotted #b9fffc 6px;
+  border-bottom: none;
+  width: 4%;
+  margin: 100px auto;
+}
+.top-container {
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(rgb(0, 255, 255), orange);
+  /* background-color: #b9fffc; */
+  position: relative;
+  padding-top: 120px;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  height: 770px;
+}
+.welcome {
+  z-index: 5;
+}
+
+.welcome h1,
+.welcome h2,
+.welcome h4 {
+  color: #1a7474;
+}
+
+.mountain-img {
+  position: relative;
+  left: auto;
+  z-index: 10;
+}
+
+.sun-img {
+  z-index: 1;
+  position: absolute;
+  right: 40%;
+  animation: dayCycle 40s linear infinite;
+}
+.pro {
+  text-decoration: underline;
+}
+
+.middle-container {
+  background-color: #1a7474;
+  position: relative;
+  padding: 150px 0;
+}
+
+.profile {
+  width: 45%;
+  margin: auto;
+}
+
+.skill-row {
+  width: 50%;
+  margin: 100px auto 150px auto;
+  text-align: left;
+}
+.left-h3 {
+  text-align: start;
+}
+.right-h3 {
+  text-align: end;
+}
+
+/* Skillrow images */
+
+.lock-img {
+  width: 25%;
+  float: right;
+  margin-left: 30px;
+}
+
+.coding-img {
+  width: 25%;
+  float: left;
+  margin-right: 30px;
+}
+
+.it-tech-img {
+  width: 25%;
+  float: right;
+  margin-left: 30px;
+}
+
+.contact-me {
+  padding-bottom: 50px;
+}
+
+.contact-message {
+  width: 40%;
+  margin: 40px auto 60px;
+}
+
+.btn {
+  background: #d19810;
+  background-image: -webkit-linear-gradient(top, #cf7500, #ffe0ac);
+  background-image: -moz-linear-gradient(top, #cf7500, #ffe0ac);
+  background-image: -ms-linear-gradient(top, #cf7500, #ffe0ac);
+  background-image: -o-linear-gradient(top, #cf7500, #ffe0ac);
+  background-image: -webkit-gradient(to bottom, #cf7500, #ffe0ac);
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 100;
+  padding: 10px;
+  -webkit-box-shadow: 1px 1px 20px 0 #000000;
+  -moz-box-shadow: 1px 1px 20px 0 #000000;
+  box-shadow: 1px 1px 20px 0 #000000;
+  text-shadow: 1px 1px 20px #000000;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+}
+
+.btn:hover {
+  border: solid #ffae00 0;
+  background: #ffae00;
+  background-image: -webkit-linear-gradient(top, #ffe0ac, #cf7500);
+  background-image: -moz-linear-gradient(top, #ffe0ac, #cf7500);
+  background-image: -ms-linear-gradient(top, #ffe0ac, #cf7500);
+  background-image: -o-linear-gradient(top, #ffe0ac, #cf7500);
+  background-image: -webkit-gradient(to bottom, #ffe0ac, #cf7500);
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.bottom-container {
+  background-color: #ffe0ac;
+  position: relative;
+  padding-top: 50px;
+  padding-bottom: 10px;
+}
+
+.footer-link {
+  color: #66bfbf;
+  margin: auto 20px auto 20px;
+  font-size: 1.5rem;
+  font-family: "Montserrat", sans-serif;
+}
+
+.copyright {
+  font-size: 0.75rem;
+  color: #66bfbf;
+  padding: 20px 0;
+}
+
+.flaticon {
+  background-color: #ffe0ac;
+  position: relative;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+.flaticon-attribute-prettycons {
+  font-size: 10px;
+  text-align: left;
+  margin-left: 2%;
+  color: #66bfbf;
+}
+
+.flaticon-attribute-freepik {
+  font-size: 10px;
+  text-align: left;
+  margin-left: 2%;
+  color: #66bfbf;
+}
+
+.bockarns {
+  width: 75px;
+  float: right;
+  margin-right: 2%;
+}
+
+/* Molneffekt */
+.cloud {
+  position: absolute;
+  left: 0; /* ankare */
+  pointer-events: none;
+  opacity: 0.85;
+  will-change: transform;
+}
+
+/* Höger → vänster */
+.cloud-top {
+  top: 150px;
+  animation: cloudLeft 60s linear infinite;
+}
+
+/* Vänster → höger */
+.cloud-bottom {
+  top: 525px;
+  animation: cloudRight 95s linear infinite;
+  z-index: 5;
+}
+
+@keyframes cloudLeft {
+  from {
+    transform: translateX(110vw);
+  }
+  to {
+    transform: translateX(-110%);
+  }
+}
+
+@keyframes cloudRight {
+  from {
+    transform: translateX(-110%);
+  }
+  to {
+    transform: translateX(110vw);
+  }
+}
+
+/* Soleffekt */
+@keyframes dayCycle {
+  0% {
+    bottom: -150px; /* Startar långt nere */
+    transform: scale(0.8) rotate(0deg);
+  }
+  40% {
+    bottom: 450px; /* Uppe på toppen */
+    transform: scale(1) rotate(140deg);
+  }
+  60% {
+    bottom: 450px; /* Stannar kvar uppe en stund */
+    transform: scale(1) rotate(220deg); /* Fortsätter rotera lite */
+  }
+  100% {
+    bottom: -150px; /* Går ner igen på andra sidan eller samma väg */
+    transform: scale(0.8) rotate(360deg); /* Fullbordar varvet */
+  }
+}
+
+/* Screensize */
+@media screen and (max-width: 992px) {
+  .profile {
+    width: 90%;
+  }
+  .skill-row {
+    width: 90%;
+    margin: 50px auto 50px auto;
+    padding: 10px;
+  }
+  .contact-message {
+    width: 80%;
+    margin: 40px auto 60px;
+  }
+}
