@@ -15,6 +15,10 @@ dd {
   margin-left: 10px;
   line-height: 26px;
 }
+h1 {
+  color: #2e70ae;
+  font-size: 4em;
+}
 
 .wrapper {
   margin: auto;
