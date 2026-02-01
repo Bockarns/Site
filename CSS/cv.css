@@ -86,17 +86,33 @@ footer {
   border-bottom: solid #2e70ae 2px;
 }
 .btn {
-  background: #d19810;
-  background-image: -webkit-linear-gradient(top, #cf7500, #ffe0ac);
-  background-image: -moz-linear-gradient(top, #cf7500, #ffe0ac);
-  background-image: -ms-linear-gradient(top, #cf7500, #ffe0ac);
-  background-image: -o-linear-gradient(top, #cf7500, #ffe0ac);
+  background: #1a7474;
+  background-image: -webkit-linear-gradient(
+    top,
+    rgba(97, 228, 206, 0.7),
+    rgba(154, 231, 231, 0.7)
+  );
+  background-image: -moz-linear-gradient(
+    top,
+    rgba(97, 228, 206, 0.7),
+    rgba(154, 231, 231, 0.7)
+  );
+  background-image: -ms-linear-gradient(
+    top,
+    rgba(97, 228, 206, 0.7),
+    rgba(154, 231, 231, 0.7)
+  );
+  background-image: -o-linear-gradient(
+    top,
+    rgba(97, 228, 206, 0.7),
+    rgba(154, 231, 231, 0.7)
+  );
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
   border-radius: 8px;
   color: #ffffff;
   font-family: "Montserrat", sans-serif;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 100;
   padding: 10px;
   -webkit-box-shadow: 1px 1px 20px 0 #000000;
@@ -111,11 +127,27 @@ footer {
 }
 
 .btn:hover {
-  background: #ffae00;
-  background-image: -webkit-linear-gradient(top, #ffe0ac, #cf7500);
-  background-image: -moz-linear-gradient(top, #ffe0ac, #cf7500);
-  background-image: -ms-linear-gradient(top, #ffe0ac, #cf7500);
-  background-image: -o-linear-gradient(top, #ffe0ac, #cf7500);
+  background: rgba(97, 228, 206, 0.7);
+  background-image: -webkit-linear-gradient(
+    top,
+    rgba(154, 231, 231, 0.7),
+    rgba(97, 228, 206, 0.7)
+  );
+  background-image: -moz-linear-gradient(
+    top,
+    rgba(154, 231, 231, 0.7),
+    rgba(97, 228, 206, 0.7)
+  );
+  background-image: -ms-linear-gradient(
+    top,
+    rgba(154, 231, 231, 0.7),
+    rgba(97, 228, 206, 0.7)
+  );
+  background-image: -o-linear-gradient(
+    top,
+    rgba(154, 231, 231, 0.7),
+    rgba(97, 228, 206, 0.7)
+  );
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
   border-radius: 8px;

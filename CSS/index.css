@@ -296,6 +296,9 @@ a:hover {
 
 /* Screensize */
 @media screen and (max-width: 992px) {
+  .top-container {
+    padding-top: 100px;
+  }
   .profile {
     width: 90%;
   }
