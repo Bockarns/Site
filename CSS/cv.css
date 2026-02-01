@@ -24,10 +24,13 @@ h3 {
   color: #2e70ae;
 }
 h1 {
-  font-size: 4rem;
+  font-size: 4vw;
 }
 h2 {
-  font-size: 2rem;
+  font-size: 2vw;
+}
+h3 {
+  margin: 2%;
 }
 
 h4 {
@@ -44,6 +47,9 @@ footer {
   padding-bottom: 10px;
   margin-top: 25px;
   text-align: center;
+}
+.footer-link {
+  text-decoration: none;
 }
 
 .wrapper {
@@ -67,8 +73,7 @@ footer {
 }
 
 .name-title {
-  position: relative;
-  bottom: 5px;
+  width: 75%;
 }
 
 .top-container {
@@ -79,6 +84,42 @@ footer {
   align-items: center;
   grid-column: span 2;
   border-bottom: solid #2e70ae 2px;
+}
+.btn {
+  background: #d19810;
+  background-image: -webkit-linear-gradient(top, #cf7500, #ffe0ac);
+  background-image: -moz-linear-gradient(top, #cf7500, #ffe0ac);
+  background-image: -ms-linear-gradient(top, #cf7500, #ffe0ac);
+  background-image: -o-linear-gradient(top, #cf7500, #ffe0ac);
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  font-weight: 100;
+  padding: 10px;
+  -webkit-box-shadow: 1px 1px 20px 0 #000000;
+  -moz-box-shadow: 1px 1px 20px 0 #000000;
+  box-shadow: 1px 1px 20px 0 #000000;
+  text-shadow: 1px 1px 20px #000000;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+  margin: 5px 0;
+}
+
+.btn:hover {
+  background: #ffae00;
+  background-image: -webkit-linear-gradient(top, #ffe0ac, #cf7500);
+  background-image: -moz-linear-gradient(top, #ffe0ac, #cf7500);
+  background-image: -ms-linear-gradient(top, #ffe0ac, #cf7500);
+  background-image: -o-linear-gradient(top, #ffe0ac, #cf7500);
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  text-decoration: none;
 }
 
 .main-content {
@@ -121,12 +162,36 @@ footer {
   .wrapper {
     width: 100%;
   }
+  footer {
+    margin-top: 0;
+  }
 }
 @media screen and (max-width: 600px) {
+  h1 {
+    font-size: 8vw;
+  }
+  h2 {
+    font-size: 4vw;
+  }
+  h3 {
+    margin-left: 0;
+  }
   .container {
     grid-template-columns: 1fr;
+    padding: 5px;
+  }
+  .top-container {
+    grid-column: auto;
+    flex-direction: column;
+    text-align: center;
   }
   .contactinfo {
-    grid-row: span 1;
+    grid-row: auto;
+  }
+  .main-content {
+    border-top: solid #2e70ae 2px;
+    border-left: none;
+    margin-left: 0;
+    padding: 10px;
   }
 }
