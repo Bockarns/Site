@@ -18,6 +18,10 @@ li {
   line-height: 2rem;
 }
 
+dt {
+  text-decoration: underline;
+}
+
 h1,
 h2,
 h3 {
