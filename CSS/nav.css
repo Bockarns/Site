@@ -34,6 +34,8 @@
   /* color: white; */
   color: #cf7500;
   text-decoration: none;
+  text-align: center;
+  font-family: "Merriweather", serif;
 }
 
 .main-nav a:hover {
@@ -70,7 +72,10 @@
   position: absolute;
   top: 100%; /* below parent */
   left: 0;
-  background: rgba(176, 219, 156, 0.9);
+  background-image: linear-gradient(
+    rgba(154, 231, 231, 0.7),
+    rgba(97, 228, 206, 0.7)
+  );
   list-style: none;
   margin: 0;
   padding: 0;
@@ -83,6 +88,8 @@
 .sub-nav li a {
   padding: 10px;
   color: #000000;
+  text-align: center;
+  font-family: "Merriweather", serif;
 }
 
 /* Show sub-nav on hover */
@@ -91,7 +98,7 @@
 }
 
 .sub-nav li a:hover {
-  background: #79c776;
+  background: rgba(247, 187, 109, 0.7);
   border-radius: 5px;
 }
 

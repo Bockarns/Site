@@ -12,8 +12,8 @@ body {
   background-color: #1a7474;
 }
 
-dd,
-li {
+.cv-list-style li,
+dd {
   margin-left: 10px;
   line-height: 2rem;
 }

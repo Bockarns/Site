@@ -1,0 +1,267 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+.wrapper {
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  height: 75vh;
+  padding: 7rem 0 3rem 0;
+  color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1a7474;
+}
+
+/* LAYOUT */
+.container-dice {
+  position: relative;
+  /*    width: 80rem;*/
+  height: 60rem;
+  background-color: rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(200px);
+  filter: blur();
+  box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.25);
+  border-radius: 9px;
+  overflow: hidden;
+  display: flex;
+}
+
+.player {
+  flex: 50%;
+  padding: 9rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.75s;
+}
+
+/* ELEMENTS */
+.name {
+  position: relative;
+  font-size: 4rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  font-weight: 300;
+  margin-bottom: 1rem;
+}
+
+.score {
+  font-size: 8rem;
+  font-weight: 300;
+  color: #cf7500;
+  margin-bottom: auto;
+}
+
+.player--active {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+.player--active .name {
+  font-weight: 700;
+}
+.player--active .score {
+  font-weight: 400;
+}
+
+.player--active .current {
+  opacity: 1;
+}
+
+.current {
+  background-color: #cf7500;
+  opacity: 0.8;
+  border-radius: 9px;
+  color: #fff;
+  width: 65%;
+  padding: 2rem;
+  text-align: center;
+  transition: all 0.75s;
+}
+
+.current-label {
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+  font-size: 1.7rem;
+  color: #ddd;
+}
+
+.current-score {
+  font-size: 3.5rem;
+}
+
+/* ABSOLUTE POSITIONED ELEMENTS */
+.btn {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #444;
+  background: none;
+  border: none;
+  font-family: inherit;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-weight: 400;
+  transition: all 0.2s;
+
+  background-color: white;
+  background-color: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(10px);
+
+  padding: 0.7rem 2.5rem;
+  border-radius: 50rem;
+  box-shadow: 0 1.75rem 3.5rem rgba(0, 0, 0, 0.1);
+}
+
+.btn::first-letter {
+  font-size: 2.4rem;
+  display: inline-block;
+  margin-right: 0.7rem;
+}
+
+.btn--new {
+  top: 4rem;
+}
+.btn--roll {
+  top: 39.3rem;
+}
+.btn--hold {
+  top: 46.1rem;
+}
+
+.btn:active {
+  transform: translate(-50%, 3px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.dice {
+  position: absolute;
+  left: 50%;
+  top: 16.5rem;
+  transform: translateX(-50%);
+  height: 10rem;
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, 0.2);
+}
+
+.player--winner {
+  background-color: #2f2f2f;
+}
+
+.player--winner .name {
+  font-weight: 700;
+  color: #1a7474;
+}
+
+.hidden {
+  display: none;
+}
+
+/*Mediascreens*/
+
+@media screen and (max-width: 992px) {
+  .container-dice {
+    margin: 0;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 768px) {
+  .container-dice {
+    height: auto;
+    padding: 6rem 1rem;
+    width: 100%;
+    margin: 0 0.5rem;
+  }
+  .current {
+    width: auto;
+    padding: 1rem;
+  }
+
+  .player {
+    padding: 5rem;
+    margin-top: auto;
+    width: auto;
+  }
+  .name {
+    font-size: 2rem;
+  }
+  .score {
+    font-size: 4rem;
+    margin-bottom: 0;
+  }
+  .btn {
+    padding: 10px;
+    align-self: center;
+  }
+  .btn--hold {
+    top: 26rem;
+  }
+
+  .btn--roll {
+    top: 20rem;
+  }
+
+  .btn--new {
+    top: 0;
+  }
+  /*Footer*/
+  .bottom-container {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .wrapper {
+    height: 100%;
+    padding-top: 10%;
+  }
+
+  .container-dice {
+    flex-direction: column;
+    height: 100%;
+    padding: 0;
+  }
+
+  .btn--hold {
+    top: 51rem;
+  }
+
+  .btn--roll {
+    top: 43rem;
+  }
+
+  .btn--new {
+    top: 1rem;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .container-dice {
+    flex-direction: column;
+    height: 100%;
+    padding: 0;
+  }
+
+  .btn--hold {
+    top: 55rem;
+  }
+
+  .btn--roll {
+    top: 46rem;
+  }
+
+  .btn--new {
+    top: 1rem;
+  }
+}

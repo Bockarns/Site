@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jerome Gordon-Bock</title>
+    <link rel="stylesheet" href="CSS/index.css" />
+    <link rel="stylesheet" href="CSS/nav.css" />
+    <link rel="stylesheet" href="CSS/dices.css" />
+    <link rel="icon" href="images/faviconjgb.ico" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Sacramento&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <header class="header">
+      <nav class="main-nav">
+        <input type="checkbox" name="menu-toggle" id="menu-toggle" />
+        <label for="menu-toggle" class="hamburger-menu">
+          <span class="bar top"></span>
+          <span class="bar middle"></span>
+          <span class="bar bottom"></span>
+        </label>
+        <ul class="menu">
+          <li class="logo-holder"></li>
+          <li class="hidden-menu-choice"><a href="./index.html">Start</a></li>
+          <li><a href="./index.html#jag">Profile</a></li>
+          <li>
+            <a href="./index.html#skill">Experience</a>
+          </li>
+          <li><a href="./index.html#contact">Contact me</a></li>
+          <li class="has-subnav">
+            <a href="#.html">▾Portfolio▾</a>
+            <ul class="sub-nav">
+              <li><a href="dices.html">Dice Game</a></li>
+              <li><a href="guessMN.html">Guess My Number</a></li>
+              <li><a href="memory.html">Memory</a></li>
+              <li>
+                <a
+                  href="https://bockarns.github.io/Golfklubb-Centar/"
+                  target="_blank"
+                  >Golf Club Centar (Swedish)</a
+                >
+              </li>
+              <li>
+                <a href="https://github.com/Bockarns" target="_blank"
+                  >More on my GitHub here!</a
+                >
+              </li>
+              <li>
+                <a href="https://www.weblaunchpb.se/" target="_blank"
+                  >Weblaunch PB (Swedish)</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="./cvNewEng.html">CV / Resume</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="wrapper">
+      <div class="container-dice">
+        <section class="player player--0 player--active">
+          <h2 class="name" id="name--0">Player 1</h2>
+          <p class="score" id="score--0">43</p>
+          <div class="current">
+            <p class="current-label">Current</p>
+            <p class="current-score" id="current--0">0</p>
+          </div>
+        </section>
+        <section class="player player--1">
+          <h2 class="name" id="name--1">Player 2</h2>
+          <p class="score" id="score--1">24</p>
+          <div class="current">
+            <p class="current-label">Current</p>
+            <p class="current-score" id="current--1">0</p>
+          </div>
+        </section>
+
+        <img
+          src="/images/dices-img/dice-5.png"
+          alt="Playing dice"
+          class="dice"
+        />
+        <button class="btn btn--new">🔄 New game</button>
+        <button class="btn btn--roll">🎲 Roll dice</button>
+        <button class="btn btn--hold">📥 Hold</button>
+      </div>
+    </div>
+    <section class="bottom-container">
+      <a
+        class="footer-link"
+        href="https://www.linkedin.com/in/jerome-gordon-bock/"
+        >LinkedIn</a
+      >
+      <a class="footer-link" href="https://twitter.com/Bockarn">Twitter</a>
+      <a class="footer-link" href="https://www.facebook.com/jeromebock"
+        >Facebook</a
+      >
+      <a class="footer-link" href="https://github.com/Bockarns">Github</a>
+      <p class="copyright">© 2026 Jerome Gordon-Bock.</p>
+    </section>
+    <footer class="flaticon">
+      <!-- <a href="Bockarns.html"> -->
+      <img
+        class="bockarns"
+        src="images/bockarns-btn.png"
+        alt="Bockarns Gaming"
+      />
+      <!-- </a> -->
+
+      <p class="flaticon-attribute-freepik">
+        Icons made by
+        <a href="https://www.flaticon.com/authors/freepik" title="Freepik"
+          >Freepik</a
+        >
+        from
+        <a href="https://www.flaticon.com/" title="Flaticon">
+          www.flaticon.com</a
+        >
+      </p>
+      <p class="flaticon-attribute-prettycons">
+        Icons made by
+        <a href="https://www.flaticon.com/authors/prettycons" title="prettycons"
+          >prettycons</a
+        >
+        from
+        <a href="https://www.flaticon.com/" title="Flaticon">
+          www.flaticon.com</a
+        >
+      </p>
+      <p class="flaticon-attribute-freepik">
+        Icons made by
+        <a href="https://www.flaticon.com/authors/smashicons" title="smashicons"
+          >smashicons</a
+        >
+        from
+        <a href="https://www.flaticon.com/" title="Flaticon">
+          www.flaticon.com</a
+        >
+      </p>
+    </footer>
+    <script src="./Scripts/index.js"></script>
+    <script src="./Scripts/dices.js"></script>
+  </body>
+</html>
