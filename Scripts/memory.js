@@ -21,12 +21,12 @@ let flips = 0;
 
 //Array med bildernas src, för att de ska kunna loopas in i DOMen i shuffle funktionen
 const imageArray = [
-  "/images/memory-img/img7.jpg",
-  "/images/memory-img/img8.jpg",
-  "/images/memory-img/img9.jpg",
-  "/images/memory-img/img10.jpg",
-  "/images/memory-img/img11.jpg",
-  "/images/memory-img/img12.jpg",
+  "./images/memory-img/img7.jpg",
+  "./images/memory-img/img8.jpg",
+  "./images/memory-img/img9.jpg",
+  "./images/memory-img/img10.jpg",
+  "./images/memory-img/img11.jpg",
+  "./images/memory-img/img12.jpg",
 ];
 
 //Funktionen som knappen starta kallar på för att starta spelet,
@@ -49,7 +49,6 @@ function InitiateCards() {
 
 //Blanda kort funktion
 function shuffleCards(arr) {
-
   for (let i = arr.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
     [arr[i], arr[j]] = [arr[j], arr[i]];
@@ -61,7 +60,7 @@ function newGame() {
   clearInterval(timerInterval);
   pairedCards = 0;
   flips = 0;
-    flipCounter.textContent = flips;
+  flipCounter.textContent = flips;
   resetTurns();
   cards.forEach((card) => {
     card.classList.remove("shake", "flip");
@@ -92,7 +91,7 @@ function checkIfPair() {
     pairedCards++;
     if (pairedCards === totalPaires) {
       openPopup(
-        `Grattis 🥳!!! Du vann med ${time} sekunder kvar, du behövde bara ${flips} vändor för att hitta alla par.`
+        `Grattis 🥳!!! Du vann med ${time} sekunder kvar, du behövde bara ${flips} vändor för att hitta alla par.`,
       );
       clearInterval(timerInterval);
     } else {
@@ -126,7 +125,7 @@ function timerCounter() {
       openPopup(
         `Tiden är slut 😢, du hade ${
           totalPaires - pairedCards
-        } par kvar att hitta. Försök igen`
+        } par kvar att hitta. Försök igen`,
       );
       disablePairdCards = true;
       clearInterval(timerInterval);
