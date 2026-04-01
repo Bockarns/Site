@@ -145,14 +145,6 @@ input[name="menu-toggle"]:checked ~ label .bottom {
 }
 
 @media screen and (max-width: 992px) {
-  /* .header{
-    position: relative;
-  } */
-
-  /* .nav-container {
-    margin: 0;
-  } */
-
   .main-nav {
     display: flex;
     flex-flow: column;
@@ -176,11 +168,14 @@ input[name="menu-toggle"]:checked ~ label .bottom {
       rgba(97, 228, 206, 0.7)
     ); */
   }
+  .has-subnav.open .sub-nav {
+    display: block;
+  }
 
   .sub-nav {
     display: none;
     position: absolute;
-    top: -50%; /* below parent 100%*/
+    top: -600%; /* below parent 100%*/
     left: 100%;
     list-style: none;
     margin: 0;
@@ -197,7 +192,7 @@ input[name="menu-toggle"]:checked ~ label .bottom {
   }
 
   input[name="menu-toggle"]:checked ~ .menu {
-    height: 13.5em;
+    height: 400px;
     overflow: hidden;
   }
 

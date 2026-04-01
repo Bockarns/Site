@@ -1,16 +1,24 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // 1. Hämta referens till checkboxen som styr menyn
   const menuCheckbox = document.getElementById("menu-toggle");
-
-  // 2. Hämta alla länkar som finns inuti .menu-listan
   const menuLinks = document.querySelectorAll(".menu a");
+  const portfolioLink = document.querySelector(".has-subnav > a");
 
-  // 3. Loopa igenom varje länk och lägg till en "klick-lyssnare"
+  // Toggle submenyn på mobil
+  portfolioLink.addEventListener("click", (e) => {
+    if (window.innerWidth <= 992) {
+      e.preventDefault();
+      portfolioLink.closest(".has-subnav").classList.toggle("open");
+    }
+  });
+
+  // Stäng hamburgermenyn vid klick på länk
   menuLinks.forEach((link) => {
     link.addEventListener("click", () => {
-      // När en länk klickas, sätt checkboxens status till false (okryssad)
-      // Detta gör att CSS:en stänger menyn igen
+      // Skippa Portfolio-knappen själv
+      if (link.closest(".has-subnav") && !link.closest(".sub-nav")) return;
       menuCheckbox.checked = false;
+      // Stäng även submenyn när man valt något
+      portfolioLink.closest(".has-subnav").classList.remove("open");
     });
   });
 });
